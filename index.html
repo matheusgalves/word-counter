@@ -11,11 +11,26 @@
     <section title="main">
         <h1>Word Counter</h1>
 
-        <form method="POST">
+        <form id='form-text' method="POST">
             <label for="input-text">Input your text here:</label>
             <textarea id="input-text" name="input-text" rows="4"></textarea>
             <button id = "submit-button" type="submit">Send</button>
         </form>
+
+        <table id="table-result">
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>QTD</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Total de Palavras</td>
+                    <td id="words"></td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
     <script src="./assets/js/main.js"></script>
